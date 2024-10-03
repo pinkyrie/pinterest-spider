@@ -20,7 +20,9 @@ def main():
     # div[@data-test-id="pin-visual-wrapper"]//img/@src
     # //div[@data-test-id="pin-visual-wrapper"]
     for img in images:
-        print(img.get_attribute('src'))
+        src = img.get_attribute('src')
+        src = src.replace('236x', 'originals')
+        print(src)
     # print(images)
     # TODO: jiliguala
     # Press the green button in the gutter to run the script.
